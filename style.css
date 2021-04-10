@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+section{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+}
+/* imagem */
+section .imgBx{
+    position: relative;
+    width: 50%;
+    height: 100%;
+}
+
+section .imgBx:before{
+    content:'';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(225deg, #e91e63, #03a9f4);
+    z-index: 1;
+    mix-blend-mode: screen;
+}
+section .imgBx img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+section .contentBx{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+}
+section .contentBx .formBx{
+    width: 50%;
+}
+/* login */
+section .contentBx .formBx h2{
+    color: #607d8b;
+    font-weight: 600;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    border-bottom: 4px solid #00e5ff;
+    display: inline-block;
+    letter-spacing: 1px;
+
+}
+
+form .inputBx{
+    position: relative;
+}
+
+section .contentBx .formBx .inputBx{
+    margin-bottom: 20px;
+    border-radius: 15px;
+
+}
+
+        /* 
+section .contentBx .formBx .inputBx span{
+    font-size: 16px;
+    margin-bottom: 5px;
+    display: inline-block;
+    color: #607d8b;
+    font-weight: 300;
+    font-size: 16px;
+    letter-spacing: 1px;
+    
+} */
+/*  username e password */
+
+/* div */
+section .contentBx .formBx .inputBx input{
+   width: 100%; 
+   padding: 10px 20px 10px 40px;
+   outline: none;
+   font-weight: 400;
+   border: 1px solid #607d8b;
+   font-size: 16px;
+   letter-spacing: 1px;
+   color: #607d8b;
+   background: transparent;
+   border-radius: 15px;
+   border: none;
+   background-color: #f0f0f0;
+   
+   
+   
+}
+
+.inputBx i{
+    color: #acacac;
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    transform: translateY(-50%); 
+}
+
+section .contentBx .formBx .inputBx input[type="submit"]{
+    background: #00e5ff; 
+    color: #fff;
+    outline: none;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 20px;
+    font-size: 16px;
+    text-transform: uppercase;
+    width: 250px;
+    box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.2);
+    justify-content: center;
+    
+       
+}
+
+section .contentBx .formBx .inputBx input[type="submit"]:hover{
+   background: #00d7ef;
+   transform:scale(0.97);
+   font-size: 16px;
+   transform:scale(0.97);
+  
+    
+}
+
+section .contentBx .formBx .remember{
+    margin-bottom: 10px;
+    color: #607d8b;
+    font: #607d8b;
+    font-weight: 400;
+    font-size:14px; 
+    margin-left: 5px; 
+}
+
+
+section .contentBx .formBx .signup p{
+    color: #607d8b;
+}
+
+section .contentBx .formBx .signup p a{
+    color: #00d7ef;
+    font-weight: bolder;
+    text-decoration: none;
+}
+
+/* .social-media{
+    display: flex;
+
+} */
+/* .social-icon{
+    height: 46px;
+    width: 46px;
+    border: 1px solid #333;
+    margin: 0 0.45rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: #333;
+    font-size: 1.1rem;
+    border-radius: 50%;
+    transition: 0.3s;
+}
+.social-icon:hover{
+    color: #00e5ff;
+    border-color:#00e5ff;
+} */
